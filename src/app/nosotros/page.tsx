@@ -37,7 +37,7 @@ export default function Nosotros() {
           <h2 className="text-2xl font-bold mb-4">Nuestra Historia</h2>
           <p>
             Un 15 de junio 2020, a inicios de la pandemia, dos hermanas decidieron transformar su tiempo libre en una
-            oportunidad de negocio, lanzando "Batido y al horno", su propia marca de repostería inspirada por "DOLCE", un
+            oportunidad de negocio, lanzando Batido y al horno, su propia marca de repostería inspirada por DOLCE, un
             pequeño proyecto de una de ellas en la adolescencia, donde vendía postres caseros en el colegio.
           </p>
           <p>
