@@ -1,79 +1,127 @@
-import Image from 'next/image';
+"use client";
+
+import NosotrosInicio from "@/components/NosotrosInicio";
+import { Handshake, Heart, SquarePen } from "lucide-react";
+import Image from "next/image";
 
 export default function Nosotros() {
   return (
     <div>
-      {/* Sobre Nosotros */}
-      <section className="flex flex-wrap justify-around items-center bg-white p-10 gap-6">
-        <div className="text-black max-w-md">
-          <h2 className="text-2xl font-bold mb-4">Sobre Nosotros</h2>
-          <p>
-            Arroz del Piurano es una marca que nació en 1996 gracias al emprendimiento de Jorge Arce,
-            quien adquirió un terreno en La Unión, Piura, para construir un molino de arroz. Inicialmente, solo producían
-            polvillo, pero con el tiempo comenzaron a vender arroz, destacándose en el mercado por el sabor característico
-            del grano del Bajo Piura. Hace cinco años, la empresa adquirió máquinas aleñadoras y selectoras para mejorar su
-            proceso de producción, consolidando su crecimiento y calidad.
-          </p>
+      <NosotrosInicio />
+      <section className="bg-green-600 bg-opacity-10 relative w-full h-screen overflow-hidden flex flex-wrap justify-center items-center  gap-20 ">
+        <div className="flex flex-col items-center text-center">
+          {/* Imagen */}
+          <Image
+            src="/images/Recurso 5.jpg"
+            alt="Agricultor en el campo"
+            width={400}
+            height={400}
+            className="w-full max-w-md rounded-lg shadow-lg mt-5"
+          />
+
+          {/* Texto */}
+          <div className="mb-4 text-left mx-96">
+            <h2 className="text-green-700 text-3xl font-bold uppercase">
+              História
+            </h2>
+            <p className="mt-4 text-black leading-5">
+              El 15 de junio de 2020, en pleno inicio de la pandemia de
+              COVID-19, el mundo enfrentaba una coyuntura sin precedentes que
+              afectó a casi todos los sectores económicos. Para muchas empresas,
+              este periodo representó un desafío enorme, e incluso algunas
+              estuvieron al borde del cierre. Sin embargo, en medio de la
+              incertidumbre, surgió la oportunidad de reinventarse y adaptarse a
+              las nuevas circunstancias
+            </p>
+            <p className="mt-4 text-black leading-5">
+              En este contexto, decidimos aprovechar el stop total que impuso
+              la pandemia para reflexionar, invertir y modernizar nuestro
+              molino. En lugar de ver este tiempo como un obstáculo, lo
+              convertimos en una oportunidad para innovar y fortalecer nuestro
+              negocio. Nos enfocamos en mejorar nuestros procesos y en adquirir
+              maquinaria de alta tecnología, como secadoras y piladoras
+              importadas desde China, con el objetivo de optimizar la producción
+              y la selección de arroz. Estas implementaciones no solo nos
+              permitieron aumentar la eficiencia, sino también elevar la calidad
+              de nuestro producto fina
+            </p>
+            <p className="mt-4 text-black leading-5">
+              Esta decisión fue crucial para adaptarnos a las nuevas demandas
+              del mercado y para asegurar la continuidad del negocio en un
+              escenario tan desafiante. La pandemia, aunque difícil, se
+              convirtió en un catalizador para modernizar nuestras operaciones y
+              prepararnos para un futuro más competitivo y sostenible
+            </p>
+          </div>
         </div>
-        <Image
-          src="/Recurso 2.png"
-          alt="Campo de arroz"
-          width={400}
-          height={300}
-          className="rounded-lg shadow-lg"
-        />
       </section>
 
-      {/* Nuestra Historia */}
-      <section className="flex flex-wrap-reverse justify-around items-center bg-green-600 text-white p-10 gap-6">
-        <Image
-          src="/Recurso 3.png"
-          alt="Campo de arroz"
-          width={400}
-          height={300}
-          className="rounded-lg shadow-lg"
-        />
-        <div className="max-w-md">
-          <h2 className="text-2xl font-bold mb-4">Nuestra Historia</h2>
-          <p>
-            Un 15 de junio 2020, a inicios de la pandemia, dos hermanas decidieron transformar su tiempo libre en una
-            oportunidad de negocio, lanzando "Batido y al horno", su propia marca de repostería inspirada por "DOLCE", un
-            pequeño proyecto de una de ellas en la adolescencia, donde vendía postres caseros en el colegio.
-          </p>
-          <p>
-            Retomaron esa pasión y comenzaron a crear desde la cocina de su madre con una inversión inicial de solo 200 soles,
-            ofreciendo sus productos a familiares y amigos, y pronto, con el deseo de crecer, impulsaron la marca en redes
-            sociales.
-          </p>
-          <p>
-            Así, digitalizaron el negocio y lograron atraer cada vez a más clientes, consolidando su presencia en el mercado.
-          </p>
+      <section
+        className="relative w-full h-screen flex items-start bg-cover bg-center p-10  "
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/Recurso 17.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          height: "100vh",
+        }}
+      >
+        <div className="max-w-6xl mx-auto text-left text-white">
+          {/* Título */}
+          <h2 className="text-green-400 text-3xl font-bold flex items-center gap-2">
+            <span className="text-4xl">→</span> EVOLUCIÓN EMPRESARIAL
+          </h2>
+
+          {/* Contenedor de textos */}
+          <div className="grid grid-cols-4 gap-8 mt-6">
+            {/* Bloques de texto */}
+            <div className="relative mt-80 animate-bounce">
+              <p className="text-md leading-6 ">
+                Desde nuestros inicios hemos sido dedicados a mejorar nuestra
+                calidad y servicio a nuestros clientes que nos ayuda a poder
+                seguir manteniendo nuestra cartera de clientes en varías
+                ciudades del Perú
+              </p>
+              <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2">
+                <span className="text-yellow-400 text-4xl">↑</span>
+              </div>
+            </div>
+            <div className="relative mt-52 animate-bounce">
+              <p className="text-md leading-6">
+                La implementación y constante innovación que adquirimos a través
+                de nuestras modernas maquinas que nos permite crear un grano de
+                calidad para una correcta cocción y selección
+              </p>
+              <div className="absolute  left-1/2 transform -translate-x-1/2 mt-2">
+                <span className="text-yellow-400 text-4xl">↑</span>
+              </div>
+            </div>
+            <div className="relative mt-36 animate-bounce">
+              <p className="text-md leading-6">
+                La calidad en nuestro grano nos permite posicionarnos entre el
+                top a nivel regional ya que nuestro sabor y cremosidad que
+                caracteriza nuestro producto es un diferenciador clave .
+              </p>
+              <div className="absolute  left-1/2 transform -translate-x-1/2 mt-2">
+                <span className="text-yellow-400 text-4xl">↑</span>
+              </div>
+            </div>
+            <div className="relative mt-16 animate-bounce">
+              <p className="text-md leading-6">
+                La implementación y constante innovación que adquirimos a través
+                de nuestras modernas maquinas que nos permite crear un grano de
+                calidad para una correcta cocción y selección
+              </p>
+              <div className="absolute  left-1/2 transform -translate-x-1/2 mt-2">
+                <span className="text-yellow-400 text-4xl">↑</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Visión */}
-      <section className="flex flex-wrap justify-around items-center bg-green-600 text-white p-10  my-2 gap-6">
-        <div className="max-w-md">
-          <h2 className="text-2xl font-bold mb-4">Trayectoria</h2>
-          <p>
-            Con 4 años de experiencia en el negocio, han logrado un crecimiento constante, adaptándose a
-            las nuevas tendencias y tecnologías en la ciudad de Chiclayo.
-          </p>
-          <p>
-            Actualmente, cuentan con un taller de producción y planean abrir su propio local.
-          </p>
-        </div>
-        <Image
-          src="/Recurso 4.png"
-          alt="Arroz en un recipiente"
-          width={300}
-          height={300}
-          className="rounded-full shadow-lg"
-        />
-      </section>
-
-      {/* Misión */}
-      <section className="flex flex-wrap justify-around items-center bg-white p-10 gap-6">
+      {/*Mision*/}
+      <section className="bg-green-600 bg-opacity-10 relative w-full h-screen overflow-hidden flex flex-wrap justify-center items-center  gap-20">
         <Image
           src="/Recurso 5.png"
           alt="Bol con arroz"
@@ -82,46 +130,70 @@ export default function Nosotros() {
           className="rounded-lg shadow-lg"
         />
         <div className="max-w-md">
-          <h2 className="text-2xl font-bold text-gray-700 mb-4">Nuestra Misión</h2>
+          <h2 className="text-6xl font-bold text-green-600 leading-tight ">
+            Nuestra Misión
+          </h2>
           <p>
-            En Batido y al Horno, nuestra misión es crear momentos especiales para nuestros clientes a través de la elaboración
-            de pasteles y postres artesanales de alta calidad.
-          </p>
-          <p>
-            Nos comprometemos a utilizar ingredientes frescos y naturales, siguiendo un proceso artesanal que garantice el sabor
-            y la excelencia en cada producto.
-          </p>
-          <p>
-            Ofrecemos un servicio personalizado y accesible, cuidando cada detalle para satisfacer las necesidades y deseos de
-            nuestros clientes.
+            Somos una empresa dedicada a la producción y comercialización de
+            arroz, comprometidos con ofrecer el mejor producto de la región. Nos
+            esforzamos por satisfacer las necesidades de todos nuestros
+            clientes, brindando una amplia variedad de opciones que se adaptan a
+            diferentes presupuestos, sin comprometer nunca la calidad que nos
+            caracteriza. Nuestro objetivo es garantizar que cada grano de arroz
+            que llega a su mesa cumpla con los más altos estándares de sabor,
+            textura y frescura, manteniendo así la confianza y preferencia de
+            quienes nos eligen. En nuestra empresa, la calidad no es una opción,
+            es una promesa.
           </p>
         </div>
       </section>
 
-      {/* Valores */}
-      <section className="bg-green-600 text-white text-center p-10 rounded-lg">
-        <h2 className="text-2xl font-bold mb-6">Nuestros Valores</h2>
-        <div className="flex justify-center gap-10">
-          {[
-            { name: 'Calidad', img: '/Recurso 6.png' },
-            { name: 'Amor', img: '/Recurso 7.png' },
-            { name: 'Frescura', img: '/Recurso 9.png' },
-          ].map((value, index) => (
-            <div key={index} className="text-center">
-              <Image
-                src={value.img}
-                alt={value.name}
-                width={80}
-                height={80}
-                className="rounded-full mb-4"
-              />
-              <p>{value.name}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+      <section className="relative h-screen flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: "url('/images/Recurso 6.jpg')" }}>
+      {/* Capa oscura */}
+      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
-      
+      {/* Contenido */}
+      <div className="relative z-10 flex flex-col md:flex-row gap-20 text-white text-center">
+        {/* Tarjeta Calidad */}
+        <div className="flex flex-col items-center mt-20  ">
+          <div className="flex flex-col items-center bg-green-500 p-6 rounded-lg shadow-lg h-52 w-52">
+          <SquarePen 
+          size={500}
+          /> {/* Ícono (puedes reemplazarlo con un SVG) */}
+          </div>
+          <h3 className="text-xl font-bold mt-4 bg-black px-4 py-1 w-52  text-green-600">CALIDAD</h3>
+          <p className="mt-2 text-md max-w-52 text-justify">En nuestros productos,en nuestras diversas calidades de arroz</p>
+        </div>
+
+        {/* Tarjeta Amor */}
+        <div className="flex flex-col items-center ">
+          <div className="flex flex-col items-center bg-green-600 p-6 rounded-lg shadow-lg h-52 w-52 ">
+          <Heart 
+          size={500}
+          />
+           
+          </div>
+          <h3 className="text-xl font-bold mt-4 bg-black px-4 py-1 w-52 text-green-600 ">AMOR</h3>
+            <p className="mt-2 text-md max-w-52 text-justify">
+              Hacia nuestros consumidores, el solo hecho de hacer arroz de calidad y accesible refleja nuestro valor más importante.
+            </p>
+        </div>
+
+        {/* Tarjeta Compromiso */}
+        <div className="flex flex-col items-center mt-20">
+          <div className="flex flex-col items-center bg-green-500 p-6 rounded-lg shadow-lg  w-52 h-52">
+          <Handshake 
+          size={500}
+          />
+            
+          </div>
+          <h3 className="text-xl font-bold mt-4 bg-black px-4 py-1 w-52 text-green-600">COMPROMISO</h3>
+            <p className="mt-2 text-md max-w-52 text-justify">
+              Con nuestra calidad y servicios que ofrecemos, la competitividad que le ponemos a nuestro trabajo.
+            </p>
+        </div>
+      </div>
+    </section>
     </div>
   );
 }
