@@ -90,7 +90,7 @@ export default function Inicio() {
         </div>
       </div>
 
-      <section className="bg-green-300 bg-opacity-10 relative w-full p-10 flex flex-col items-center">
+      <section className="bg-white relative w-full p-10 flex flex-col items-center">
         {/* Título y texto */}
         <div className="w-full max-w-5xl flex flex-col md:flex-row items-start gap-6">
           {/* Imágenes */}
@@ -155,7 +155,7 @@ export default function Inicio() {
    
       {/*carousel*/}
       <Carousel />
-      <section className=" bg-green-300 bg-opacity-10 relative w-full min-h-screen overflow-hidden flex flex-wrap justify-around items-center p-10 gap-6">
+      <section className=" bg-white relative w-full min-h-screen overflow-hidden flex flex-wrap justify-around items-center p-10 gap-6">
         {/* Título centrado */}
         <div className="w-full text-center mb-6">
           <h1 className="text-4xl font-bold uppercase">Servicio Principal</h1>

@@ -8,53 +8,48 @@ export default function Nosotros() {
   return (
     <div>
       <NosotrosInicio />
-      <section className="bg-green-600 bg-opacity-10 relative w-full h-screen overflow-hidden flex flex-wrap justify-center items-center  gap-20 ">
-        <div className="flex flex-col items-center text-center">
-          {/* Imagen */}
-          <Image
-            src="/images/Recurso 5.jpg"
-            alt="Agricultor en el campo"
-            width={400}
-            height={400}
-            className="w-full max-w-md rounded-lg shadow-lg mt-5"
-          />
-
-          {/* Texto */}
-          <div className="mb-4 text-left mx-96">
-            <h2 className="text-green-700 text-3xl font-bold uppercase">
-              História
-            </h2>
-            <p className="mt-4 text-black leading-5">
-              El 15 de junio de 2020, en pleno inicio de la pandemia de
-              COVID-19, el mundo enfrentaba una coyuntura sin precedentes que
-              afectó a casi todos los sectores económicos. Para muchas empresas,
-              este periodo representó un desafío enorme, e incluso algunas
-              estuvieron al borde del cierre. Sin embargo, en medio de la
-              incertidumbre, surgió la oportunidad de reinventarse y adaptarse a
-              las nuevas circunstancias
-            </p>
-            <p className="mt-4 text-black leading-5">
-              En este contexto, decidimos aprovechar el stop total que impuso
-              la pandemia para reflexionar, invertir y modernizar nuestro
-              molino. En lugar de ver este tiempo como un obstáculo, lo
-              convertimos en una oportunidad para innovar y fortalecer nuestro
-              negocio. Nos enfocamos en mejorar nuestros procesos y en adquirir
-              maquinaria de alta tecnología, como secadoras y piladoras
-              importadas desde China, con el objetivo de optimizar la producción
-              y la selección de arroz. Estas implementaciones no solo nos
-              permitieron aumentar la eficiencia, sino también elevar la calidad
-              de nuestro producto fina
-            </p>
-            <p className="mt-4 text-black leading-5">
-              Esta decisión fue crucial para adaptarnos a las nuevas demandas
-              del mercado y para asegurar la continuidad del negocio en un
-              escenario tan desafiante. La pandemia, aunque difícil, se
-              convirtió en un catalizador para modernizar nuestras operaciones y
-              prepararnos para un futuro más competitivo y sostenible
-            </p>
-          </div>
-        </div>
-      </section>
+   <section className="relative w-full flex flex-col items-center bg-white p-10 gap-6">
+           {/* Contenedor principal */}
+           <div className="flex flex-wrap justify-center items-center w-full">
+             {/* Contenedor del texto */}
+             <div className="max-w-xl text-left p-10">
+               {/* Título */}
+               <h2 className="text-green-700 text-4xl font-bold">HISTORIA</h2>
+   
+               {/* Descripción */}
+               <p className="text-black mt-4 text-md leading-7">
+                El 15 de junio de 2020, en pleno inicio de la pandemia de COVID-19, el mundo enfrentaba una coyuntura sin precedentes que afectó a casi todos
+                los sectores económicos. Para muchas empresas, este periodo representó un desafío enorme, e incluso algunas estuvieron al borde del cierre.
+                Sin embargo, en medio de la incertidumbre, surgió la oportunidad de reinventarse y adaptarse a las nuevas circunstancias.
+               </p>
+               <p className="text-black mt-2 text-md leading-7">
+                En este contexto, decidimos aprovechar el stop total que impuso la pandemia para reflexionar, invertir y modernizar nuestro molino. En lugar
+                de ver este tiempo como un obstáculo, lo convertimos en una oportunidad para innovar y fortalecer nuestro negocio. Nos enfocamos en
+                mejorar nuestros procesos y en adquirir maquinaria de alta tecnología, como secadoras y piladoras importadas desde China, con el objetivo de
+                optimizar la producción y la selección de arroz. Estas implementaciones no solo nos permitieron aumentar la eficiencia, sino también elevar la
+                calidad de nuestro producto final
+               </p>
+               <p className="text-black mt-2 text-md leading-7">
+                Esta decisión fue crucial para adaptarnos a las nuevas demandas del mercado y para asegurar la continuidad del negocio en un escenario tan
+                desafiante. La pandemia, aunque difícil, se convirtió en un catalizador para modernizar nuestras operaciones y prepararnos para un futuro
+                más competitivo y sostenible
+               </p>
+             </div>
+   
+             {/* Imagen */}
+             <div className="w-[600px] h-[600px]">
+               <Image
+                 src="/images/Recurso 5.jpg"
+                 alt="Cultivo de arroz"
+                 width={600}
+                 height={600}
+                 className="w-full h-full object-cover rounded-lg shadow-md"
+               />
+             </div>
+           </div>
+   
+          
+         </section>
 
       <section
         className="relative w-full h-screen flex items-start bg-cover bg-center p-10  "
@@ -75,45 +70,45 @@ export default function Nosotros() {
           {/* Contenedor de textos */}
           <div className="grid grid-cols-4 gap-8 mt-6">
             {/* Bloques de texto */}
-            <div className="relative mt-80 animate-bounce">
+            <div className="relative mt-80 ">
               <p className="text-md leading-6 ">
                 Desde nuestros inicios hemos sido dedicados a mejorar nuestra
                 calidad y servicio a nuestros clientes que nos ayuda a poder
                 seguir manteniendo nuestra cartera de clientes en varías
                 ciudades del Perú
               </p>
-              <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2">
-                <span className="text-yellow-400 text-4xl">↑</span>
+              <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 animate-bounce">
+                <span className="text-yellow-400 text-4xl ">↑</span>
               </div>
             </div>
-            <div className="relative mt-52 animate-bounce">
+            <div className="relative mt-52 ">
               <p className="text-md leading-6">
                 La implementación y constante innovación que adquirimos a través
                 de nuestras modernas maquinas que nos permite crear un grano de
                 calidad para una correcta cocción y selección
               </p>
-              <div className="absolute  left-1/2 transform -translate-x-1/2 mt-2">
-                <span className="text-yellow-400 text-4xl">↑</span>
+              <div className="absolute  left-1/2 transform -translate-x-1/2 mt-2 animate-bounce">
+                <span className="text-yellow-400 text-4xl ">↑</span>
               </div>
             </div>
-            <div className="relative mt-36 animate-bounce">
+            <div className="relative mt-36 ">
               <p className="text-md leading-6">
                 La calidad en nuestro grano nos permite posicionarnos entre el
                 top a nivel regional ya que nuestro sabor y cremosidad que
                 caracteriza nuestro producto es un diferenciador clave .
               </p>
-              <div className="absolute  left-1/2 transform -translate-x-1/2 mt-2">
+              <div className="absolute  left-1/2 transform -translate-x-1/2 mt-2  animate-bounce">
                 <span className="text-yellow-400 text-4xl">↑</span>
               </div>
             </div>
-            <div className="relative mt-16 animate-bounce">
+            <div className="relative mt-16 ">
               <p className="text-md leading-6">
                 La implementación y constante innovación que adquirimos a través
                 de nuestras modernas maquinas que nos permite crear un grano de
                 calidad para una correcta cocción y selección
               </p>
-              <div className="absolute  left-1/2 transform -translate-x-1/2 mt-2">
-                <span className="text-yellow-400 text-4xl">↑</span>
+              <div className="absolute  left-1/2 transform -translate-x-1/2 mt-2 animate-bounce">
+                <span className="text-yellow-400 text-4xl ">↑</span>
               </div>
             </div>
           </div>
@@ -121,32 +116,46 @@ export default function Nosotros() {
       </section>
 
       {/*Mision*/}
-      <section className="bg-green-600 bg-opacity-10 relative w-full h-screen overflow-hidden flex flex-wrap justify-center items-center  gap-20">
-        <Image
-          src="/Recurso 5.png"
-          alt="Bol con arroz"
-          width={300}
-          height={300}
-          className="rounded-lg shadow-lg"
-        />
-        <div className="max-w-md">
-          <h2 className="text-6xl font-bold text-green-600 leading-tight ">
-            Nuestra Misión
-          </h2>
-          <p>
-            Somos una empresa dedicada a la producción y comercialización de
-            arroz, comprometidos con ofrecer el mejor producto de la región. Nos
-            esforzamos por satisfacer las necesidades de todos nuestros
-            clientes, brindando una amplia variedad de opciones que se adaptan a
-            diferentes presupuestos, sin comprometer nunca la calidad que nos
-            caracteriza. Nuestro objetivo es garantizar que cada grano de arroz
-            que llega a su mesa cumpla con los más altos estándares de sabor,
-            textura y frescura, manteniendo así la confianza y preferencia de
-            quienes nos eligen. En nuestra empresa, la calidad no es una opción,
-            es una promesa.
-          </p>
-        </div>
-      </section>
+      <section className="relative w-full flex flex-col items-center bg-white p-10 gap-6">
+           
+           {/* Contenedor principal */}
+           <div className="flex flex-wrap justify-center items-center w-full">
+            {/* Imagen */}
+            <div className="w-[450px] h-[450px]">
+               <Image
+                 src="/images/Recurso 24.png"
+                 alt="Cultivo de arroz"
+                 width={400}
+                 height={400}
+                 className="w-full h-full object-cover rounded-lg shadow-md"
+               />
+             </div>
+             {/* Contenedor del texto */}
+             <div className="max-w-xl text-left p-10">
+               {/* Título */}
+               <h2 className="text-green-700 text-4xl font-bold">MISION</h2>
+   
+               {/* Descripción */}
+               <p className="text-black mt-4 text-xl leading-7">
+                Somos una empresa dedicada a la producción y comercialización de
+                arroz, comprometidos con ofrecer el mejor producto de la región.
+                Nos esforzamos por satisfacer las necesidades de todos nuestros
+                clientes, brindando una amplia variedad de opciones que se adaptan
+                a diferentes presupuestos, sin comprometer nunca la calidad que
+                nos caracteriza. Nuestro objetivo es garantizar que cada grano de
+                arroz que llega a su mesa cumpla con los más altos estándares de
+                sabor, textura y frescura, manteniendo así la confianza y
+                preferencia de quienes nos eligen. En nuestra empresa, la calidad no
+                es una opción, es una promesa.
+               </p>
+       
+             </div>
+   
+             
+           </div>
+   
+          
+         </section>
 
       <section className="relative h-screen flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: "url('/images/Recurso 6.jpg')" }}>
       {/* Capa oscura */}

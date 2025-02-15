@@ -1,13 +1,9 @@
 "use client";
+import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 
 
 export default function Contacto() {
-
-  const slides = [
-    "/images/Recurso 1.png",
-   
-  ];
 
 
 
@@ -16,13 +12,27 @@ export default function Contacto() {
       <div className="relative w-full h-screen overflow-hidden">
         {/* Imagen de fondo */}
         <div className="absolute inset-0">
-          <Image
-            src={slides[0]}
-            alt="Carousel slide"
-            layout="fill"
-            objectFit="cover"
-            className="w-full h-full scale-x-[-1]"
-          />
+        <AnimatePresence mode="wait">
+            <motion.div
+              key={"w"}
+              initial={{ x: 100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: -100, opacity: 0 }}
+              transition={{ duration: 1.5 }}
+              className="absolute right-0 w-full h-full"
+              style={{
+                clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+              }}
+            >
+              <Image
+                src={"/images/Recurso 1.png"}
+                alt="Slide image"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-r-lg"
+              />
+            </motion.div>
+          </AnimatePresence>
         </div>
 
         {/* Contenido superpuesto */}

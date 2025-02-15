@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-[#1E1D1D] text-white py-10 px-6 md:px-20 flex flex-wrap justify-between items-start">
       {/* Logo y descripción */}
       <div className="w-full md:w-1/4 flex flex-col gap-2">
-        <Image src="/images/Logo Positivo.png" width={150} height={50} alt="Logo Arroz Puranito" />
+        <Image src="/images/Logo.png" width={150} height={150} alt="Logo Arroz Puranito" />
         <p className="text-sm text-gray-400">
           Del campo a tu mesa calidad, tradición y sabor en cada grano
         </p>

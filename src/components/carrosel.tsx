@@ -53,7 +53,7 @@ export default function Carousel() {
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: 100, opacity: 0 }}
-            transition={{ duration: 1.5 }}
+            transition={{ duration: 0.8 }}
             className="absolute left-0 w-2/5 h-full bg-black text-white flex flex-col justify-center p-10 z-10"
             style={{
                 clipPath: "polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%)",
@@ -79,7 +79,7 @@ export default function Carousel() {
             initial={{ x: 100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: -100, opacity: 0 }}
-            transition={{ duration: 1.5 }}
+            transition={{ duration: 0.8 }}
             className="absolute right-0 w-full h-full"
             style={{
                 clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
