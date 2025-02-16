@@ -1,4 +1,5 @@
 "use client";
+import App from "@/components/Mapa";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 
@@ -60,7 +61,7 @@ export default function Contacto() {
                   type="text"
                   id="name"
                   name="name"
-                  placeholder="Tu nombre completo"
+                  placeholder="Nombre completo"
                   required
                   className="w-full p-2 mb-4 rounded text-black"
                 />
@@ -72,7 +73,7 @@ export default function Contacto() {
                   type="email"
                   id="email"
                   name="email"
-                  placeholder="Tu correo electrónico"
+                  placeholder="Correo electrónico"
                   required
                   className="w-full p-2 mb-4 rounded text-black"
                 />
@@ -84,7 +85,7 @@ export default function Contacto() {
                   type="tel"
                   id="phone"
                   name="phone"
-                  placeholder="Tu número de teléfono"
+                  placeholder="Número de teléfono"
                   required
                   className="w-full p-2 mb-4 rounded text-black"
                 />
@@ -105,6 +106,10 @@ export default function Contacto() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="relative w-full h-screen overflow-hidden">
+        <App/>
       </div>
     </div>
   );

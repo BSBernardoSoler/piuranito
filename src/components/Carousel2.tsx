@@ -4,6 +4,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const slides = [
   {
@@ -53,9 +54,11 @@ export default function CarouselSection() {
               <h2 className="bg-green-700 text-white text-2xl font-bold px-6 py-3">
                 {slide.title}
               </h2>
-              <button className="bg-black text-white px-4 py-2 flex items-center gap-2 mt-2">
+             <Link href={"/servicios"}>
+             <button className="bg-black text-white px-4 py-2 flex items-center gap-2 mt-2">
                 VER MÁS <ChevronRight size={18} />
               </button>
+             </Link>
             </div>
           </SwiperSlide>
         ))}

@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 const slides = [
   {
@@ -63,9 +64,11 @@ export default function Carousel() {
             <div className="text-sm text-green-500 font-bold">0{currentIndex + 1}</div>
             <h2 className="text-3xl font-bold">{slides[currentIndex].title}</h2>
             <p className="mt-4 text-gray-300">{slides[currentIndex].description}</p>
-            <button className="mt-6 bg-green-600 px-6 py-3 text-white font-bold rounded-lg flex items-center hover:bg-green-500 transition">
+             <Link href={"/nosotros"}>
+             <button className="mt-6 bg-green-600 px-6 py-3 text-white font-bold rounded-lg flex items-center hover:bg-green-500 transition">
               LEER MÁS →
             </button>
+             </Link>
 
             </div>
            

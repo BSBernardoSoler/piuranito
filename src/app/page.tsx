@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Fade } from "react-awesome-reveal";
+import Link from "next/link";
 
 export default function Inicio() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -70,9 +71,11 @@ export default function Inicio() {
             Participa de nuestra marcha blanca en pilado y secado de arroz con
             el 20% de descuento por tonelada de cáscara.
           </p>
-          <button className="mt-6 bg-green-500 text-white px-6 py-3 font-semibold text-lg rounded-md hover:bg-green-600 transition">
+         <Link href={"/nosotros"}>
+         <button className="mt-6 bg-green-500 text-white px-6 py-3 font-semibold text-lg rounded-md hover:bg-green-600 transition">
             LEER MÁS →
           </button>
+         </Link>
         </div>
 
         {/* Botones de navegación */}
