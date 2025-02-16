@@ -1,6 +1,7 @@
 "use client";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
+import { Fade } from "react-awesome-reveal";
 
 export default function Servicios() {
   return (
@@ -54,6 +55,12 @@ export default function Servicios() {
           {/* Contenedor del texto */}
           <div className="max-w-xl text-left px-4">
             {/* Título */}
+            <Fade
+              delay={200} // Wait 200ms before starting
+              duration={1000} // Animation lasts 1 second
+              // Only animate once
+              fraction={0.5} // Start animation when element is 50% visible
+            >
             <h2 className="text-green-700 text-4xl font-bold">ARROZ BLANCO</h2>
 
             {/* Descripción */}
@@ -76,6 +83,7 @@ export default function Servicios() {
               glucémico. Además, controlar el tamaño de las porciones también es
               importante para evitar picos de azúcar en sangre.
             </p>
+            </Fade>
           </div>
 
           {/* Imagen */}
@@ -92,6 +100,12 @@ export default function Servicios() {
 
         {/* Beneficios */}
         <div className="w-full text-center mt-6">
+        <Fade
+              delay={200} // Wait 200ms before starting
+              duration={1000} // Animation lasts 1 second
+              // Only animate once
+              fraction={0.5} // Start animation when element is 50% visible
+            >
           <h3 className="text-green-700 text-2xl font-bold">
             QUE BENEFICIOS INCLUYEN:
           </h3>
@@ -103,6 +117,7 @@ export default function Servicios() {
             </p>
             <p className="text-black text-lg font-medium">Bajo en fibra</p>
           </div>
+          </Fade>
         </div>
       </section>
 
@@ -122,6 +137,12 @@ export default function Servicios() {
           {/* Contenedor del texto */}
           <div className="max-w-xl text-left px-8">
             {/* Título */}
+            <Fade
+              delay={200} // Wait 200ms before starting
+              duration={1000} // Animation lasts 1 second
+              // Only animate once
+              fraction={0.5} // Start animation when element is 50% visible
+            >
             <h2 className="text-green-700 text-4xl font-bold">
               ARROZ INTEGRAL
             </h2>
@@ -148,11 +169,18 @@ export default function Servicios() {
               contiene más proteínas que el arroz blanco, lo que contribuye a la
               reparación de tejidos y al crecimiento muscular
             </p>
+            </Fade>
           </div>
         </div>
 
         {/* Beneficios */}
         <div className="w-full text-center mt-6">
+        <Fade
+              delay={200} // Wait 200ms before starting
+              duration={1000} // Animation lasts 1 second
+              // Only animate once
+              fraction={0.5} // Start animation when element is 50% visible
+            >
           <h3 className="text-green-700 text-2xl font-bold">BENEFICIOS:</h3>
 
           <div className="flex justify-center gap-10 mt-4">
@@ -164,6 +192,7 @@ export default function Servicios() {
               Favorece la saciedad
             </p>
           </div>
+          </Fade>
         </div>
       </section>
 
@@ -173,6 +202,12 @@ export default function Servicios() {
           {/* Contenedor del texto */}
           <div className="max-w-xl text-left px-10">
             {/* Título */}
+            <Fade
+              delay={200} // Wait 200ms before starting
+              duration={1000} // Animation lasts 1 second
+              // Only animate once
+              fraction={0.5} // Start animation when element is 50% visible
+            >
             <h2 className="text-green-700 text-4xl font-bold">
               ARROZ PARBOLIZADO
             </h2>
@@ -212,6 +247,7 @@ export default function Servicios() {
               saludable, y combinarlo con proteínas, verduras y grasas
               saludables para obtener una comida completa.
             </p>
+            </Fade>
           </div>
 
           {/* Imagen */}
@@ -228,6 +264,12 @@ export default function Servicios() {
 
         {/* Beneficios */}
         <div className="w-full text-center mt-6">
+        <Fade
+              delay={200} // Wait 200ms before starting
+              duration={1000} // Animation lasts 1 second
+              // Only animate once
+              fraction={0.5} // Start animation when element is 50% visible
+            >
           <h3 className="text-green-700 text-2xl font-bold">
             QUE BENEFICIOS INCLUYEN:
           </h3>
@@ -239,6 +281,7 @@ export default function Servicios() {
             </p>
             <p className="text-black text-lg font-medium">Bajo en fibra</p>
           </div>
+          </Fade>
         </div>
       </section>
 
@@ -256,6 +299,12 @@ export default function Servicios() {
 
         {/* Contenedor del texto */}
         <div className="max-w-xl text-left px-2">
+        <Fade
+              delay={200} // Wait 200ms before starting
+              duration={1000} // Animation lasts 1 second
+              // Only animate once
+              fraction={0.5} // Start animation when element is 50% visible
+            >
           {/* Título */}
           <h2 className="text-green-700 text-4xl font-bold">ARROZ QUEBRADO</h2>
 
@@ -280,6 +329,7 @@ export default function Servicios() {
             proteínas y algo de vitamina B1 (tiamina) y B6, esenciales para el
             metabolismo energético y el sistema nervioso.
           </p>
+          </Fade>
         </div>
       </section>
     </div>

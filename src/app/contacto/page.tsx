@@ -2,17 +2,13 @@
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 
-
 export default function Contacto() {
-
-
-
   return (
     <div>
       <div className="relative w-full h-screen overflow-hidden">
         {/* Imagen de fondo */}
         <div className="absolute inset-0">
-        <AnimatePresence mode="wait">
+          <AnimatePresence mode="wait">
             <motion.div
               key={"w"}
               initial={{ x: 100, opacity: 0 }}
@@ -36,24 +32,23 @@ export default function Contacto() {
         </div>
 
         {/* Contenido superpuesto */}
-        <div className="absolute inset-0 flex flex-col items-start justify-center  bg-black bg-opacity-50 text-white">
-          <div className="ml-52 mb-52 text-justify flex flex-wrap justify-around items-center">
-            <div>
+        <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white p-4  pt-10">
+          <div className="w-full max-w-6xl flex flex-col lg:flex-row items-center justify-around">
+            <div className="text-center lg:text-left mb-8 lg:mb-0 lg:max-w-lg">
               <p className="text-green-500 text-lg font-bold">
                 Tus comentarios y preguntas nos ayudan a servirte mejor
               </p>
-              <h1 className="text-5xl font-bold leading-tight">
+              <h1 className="text-4xl lg:text-5xl font-bold leading-tight mt-4">
                 ¡Queremos Saber de Ti!
               </h1>
-              <p className="mt-4 text-lg max-w-lg">
+              <p className="mt-4 text-lg">
                 En Nuestra Esencia, estamos comprometidos con ofrecerte el mejor
                 arroz desde el campo hasta tu mesa. Si tienes dudas, comentarios
                 o simplemente quieres saludarnos, ¡escríbenos! Nos encantaría
                 escucharte.
               </p>
-              `
             </div>
-            <div className="bg-green-600 bg-opacity-30 text-white p-6 rounded-lg shadow-lg max-w-md w-full ml-20 mt-32">
+            <div className="bg-green-600 bg-opacity-30 text-white p-6 rounded-lg shadow-lg w-full max-w-md">
               <h3 className="text-2xl font-bold mb-4">
                 Siempre mantente en contacto con nosotros
               </h3>
@@ -102,17 +97,15 @@ export default function Contacto() {
 
                 <button
                   type="submit"
-                  className="bg-yellow-400 text-black py-2 px-4 rounded font-bold hover:bg-yellow-500"
+                  className="bg-yellow-400 text-black py-2 px-4 rounded font-bold hover:bg-yellow-500 w-full"
                 >
                   Enviar mensaje
                 </button>
               </form>
             </div>
-            `
           </div>
         </div>
       </div>
-
     </div>
   );
 }

@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="es">
      
-      <body>  <Nav/>
+      <body className="background">  <Nav/>
         <div className="mt-16">
         {children}
         </div>
