@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import {Nav} from "@/components/nav";
 import Footer from "@/components/footer";
+import RainPattern from "@/components/background";
 
 
 
@@ -20,6 +21,8 @@ export default function RootLayout({
     <html lang="es">
      
       <body className="background">  <Nav/>
+       <RainPattern
+       />
         <div className="mt-16">
         {children}
         </div>

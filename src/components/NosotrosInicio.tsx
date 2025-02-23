@@ -40,10 +40,10 @@ export default function NosotrosInicio() {
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: 100, opacity: 0 }}
             transition={{ duration: 1.5 }}
-            className="absolute left-0 w-2/5 h-full bg-black bg-opacity-50 text-white flex flex-col justify-center p-10 z-10"
+            className="absolute left-0 w-full md:w-2/5 h-full bg-black text-white flex flex-col justify-center p-10 z-10 bg-opacity-35 md:bg-opacity-100"
             style={{
-                clipPath: "polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%)",
-              }}
+              clipPath: window.innerWidth > 768 ? "polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%)" : "none",
+            }}
           >
             <div className="absolute inset-0 flex flex-col items-start justify-center px-10  text-white max-w-96">
            

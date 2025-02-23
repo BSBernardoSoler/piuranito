@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Fade } from "react-awesome-reveal";
 import Link from "next/link";
+import { FloatingCards } from "@/components/FloatingCard";
 
 export default function Inicio() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -99,6 +100,7 @@ export default function Inicio() {
         <div className="w-full max-w-5xl flex flex-col md:flex-row items-start gap-6">
           {/* Imágenes */}
           <div className="flex flex-col md:flex-row gap-4">
+          <FloatingCards>
             <Image
               src="/images/Recurso 4.jpg"
               alt="Campo de arroz"
@@ -106,6 +108,8 @@ export default function Inicio() {
               height={400}
               className="w-full md:w-[400px] h-auto rounded-lg shadow-lg"
             />
+            </FloatingCards>
+
           </div>
           <div className="flex-1">
             <Fade
@@ -184,13 +188,16 @@ export default function Inicio() {
 
         {/* Primer bloque */}
         <div className="w-full md:w-5/12 order-1 md:order-1">
-          <Image
+        <FloatingCards>
+        <Image
             src="/images/Recurso 8.png"
             width={400}
             height={400}
             alt="Arroz de grano selecto"
             className="w-full md:w-[300px] h-auto mx-auto md:ml-60 rounded-lg shadow-lg"
           />
+        </FloatingCards>
+        
         </div>
       
       <div className="flex w-full md:w-5/12 flex-col gap-4 order-2 md:order-2">
@@ -235,6 +242,7 @@ export default function Inicio() {
         </div>
        
         <div className="w-full md:w-5/12 order-3 md:order-4">
+        <FloatingCards>
           <Image
             src="/images/Recurso 9.png"
             width={300}
@@ -242,6 +250,7 @@ export default function Inicio() {
             alt="Arroz de grano corto"
             className="w-full md:w-[300px] h-auto mx-auto md:ml-12 mt-5 rounded-lg shadow-lg"
           />
+         </FloatingCards>
         </div>
       </section>
 
@@ -250,6 +259,7 @@ export default function Inicio() {
       <section className="relative w-full h-screen overflow-hidden flex flex-wrap justify-around items-center bg-white p-4 md:p-10 gap-6">
         {/* Imagen de fondo */}
         <div className="absolute inset-0">
+     
           <Image
             src="/images/Recurso 7.jpg"
             alt="Campo agrícola"
@@ -257,6 +267,7 @@ export default function Inicio() {
             objectFit="cover"
             className="scale-x-[-1]"
           />
+      
           <div className="absolute inset-0 bg-black bg-opacity-40"></div>
         </div>
 
@@ -301,3 +312,6 @@ export default function Inicio() {
     </div>
   );
 }
+
+
+

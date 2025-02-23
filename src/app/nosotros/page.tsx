@@ -1,17 +1,18 @@
 "use client";
 
+import { FloatingCards } from "@/components/FloatingCard";
 import NosotrosInicio from "@/components/NosotrosInicio";
 import { Handshake, Heart, SquarePen } from "lucide-react";
 import Image from "next/image";
 import { Fade } from "react-awesome-reveal";
+import styled from "styled-components";
 
 export default function Nosotros() {
   return (
     <div>
       <NosotrosInicio />
-
       {/* Sección HISTORIA */}
-      <section className="relative w-full flex flex-col items-center bg-white p-4 md:p-10 gap-6">
+      <section className="relative w-full flex flex-col items-center p-4 md:p-10 gap-6">
         <div className="flex flex-wrap justify-center items-center w-full">
           {/* Contenedor del texto */}
           <div className="max-w-xl text-left p-4 md:p-10">
@@ -43,7 +44,9 @@ export default function Nosotros() {
           </div>
 
           {/* Imagen */}
+          <FloatingCards>
           <div className="w-full md:w-[600px] h-[300px] md:h-[600px]">
+          
             <Image
               src="/images/Recurso 5.jpg"
               alt="Cultivo de arroz"
@@ -51,7 +54,9 @@ export default function Nosotros() {
               height={600}
               className="w-full h-full object-cover rounded-lg shadow-md"
             />
+            
           </div>
+          </FloatingCards>
         </div>
       </section>
 
@@ -110,10 +115,11 @@ export default function Nosotros() {
       </section>
 
       {/* Sección MISIÓN */}
-      <section className="relative w-full flex flex-col items-center bg-white p-4 md:p-10 gap-6">
+      <section className="relative w-full flex flex-col items-center  p-4 md:p-10 gap-6">
         <div className="flex flex-wrap justify-center items-center w-full">
           {/* Imagen */}
           <div className="w-full md:w-[450px] h-[300px] md:h-[450px]">
+            <FloatingCards>
             <Image
               src="/images/Recurso 24.png"
               alt="Cultivo de arroz"
@@ -121,6 +127,7 @@ export default function Nosotros() {
               height={400}
               className="w-full h-full object-cover rounded-lg shadow-md"
             />
+            </FloatingCards>
           </div>
           {/* Contenedor del texto */}
           <div className="max-w-xl text-left p-4 md:p-10">
@@ -182,3 +189,4 @@ export default function Nosotros() {
     </div>
   );
 }
+

@@ -49,7 +49,7 @@ export default function Servicios() {
         </div>
       </div>
 
-      <section className="relative w-full flex flex-col items-center bg-white p-10 gap-6">
+      <section className="relative w-full flex flex-col items-center p-10 gap-6">
         {/* Contenedor principal */}
         <div className="flex flex-wrap justify-center items-center w-full">
           {/* Contenedor del texto */}
@@ -121,7 +121,7 @@ export default function Servicios() {
         </div>
       </section>
 
-      <section className="relative w-full flex flex-col items-center bg-white p-10 gap-6">
+      <section className="relative w-full flex flex-col items-center p-10 gap-6">
         {/* Contenedor principal */}
         <div className="flex flex-wrap justify-center items-center w-full">
           {/* Imagen */}
@@ -196,7 +196,7 @@ export default function Servicios() {
         </div>
       </section>
 
-      <section className="relative w-full flex flex-col items-center bg-white p-10 gap-6">
+      <section className="relative w-full flex flex-col items-center  p-10 gap-6">
         {/* Contenedor principal */}
         <div className="flex flex-wrap justify-center items-center w-full">
           {/* Contenedor del texto */}
@@ -285,7 +285,7 @@ export default function Servicios() {
         </div>
       </section>
 
-      <section className="relative w-full h-screen overflow-hidden flex flex-wrap justify-center items-center bg-white p-10 gap-6">
+      <section className="relative w-full h-screen overflow-hidden flex flex-wrap justify-center items-center    p-10 gap-6">
         {/* Imagen del arroz */}
         <div className="w-[600px] h-[400px]">
           <Image
