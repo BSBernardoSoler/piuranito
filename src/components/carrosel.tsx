@@ -43,7 +43,8 @@ export default function Carousel() {
     setCurrentIndex((prev) => (prev + 1) % slides.length);
   };
 
- 
+  const isClient = typeof window !== "undefined";
+
 
   return (
     <section className="  relative w-full h-screen overflow-hidden flex justify-center items-center p-10">
@@ -59,7 +60,9 @@ export default function Carousel() {
 
 
             style={{
-              clipPath: window.innerWidth > 768 ? "polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%)" : "none",
+              clipPath: isClient && window.innerWidth > 768 
+                ? "polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%)" 
+                : "none",
             }}
           >
             <div className="absolute inset-0 flex flex-col items-start justify-center px-10 bg-black bg-opacity-50 text-white max-w-96">

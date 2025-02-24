@@ -5,7 +5,6 @@ import NosotrosInicio from "@/components/NosotrosInicio";
 import { Handshake, Heart, SquarePen } from "lucide-react";
 import Image from "next/image";
 import { Fade } from "react-awesome-reveal";
-import styled from "styled-components";
 
 export default function Nosotros() {
   return (
